@@ -12,7 +12,7 @@ if($_POST["message"]) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Null Studios | Web Development Initiative</title>
+    <title> Null Studios Development</title>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -53,7 +53,7 @@ if($_POST["message"]) {
               </div>
             </div>
           </nav>
-          <section class="hero" id="hero">
+          <section class="header" id="header">
             <div class="container">
               <div class="row">
                 <div class="col-md-12 text-right navicon">
@@ -74,107 +74,24 @@ if($_POST["message"]) {
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3 text-center">
-    <a href="http://www.youtube.com/v/aPx_Xge-wzM&hl=en_US&fs=1&autoplay=1" class="button btnPush btnLightBlue">Watch Our Latest Video<a>
+    <a href="#intro" class="button btnPush btnBlack">Explore Our Page<a>
   </div>
 </div>
 
-
-<div class="modal" id="video-modal">
-    <div id="video-container" style="width: 425px; height: 344px;"></div>
-</div>
-  
-<script language="javascript" type="text/javascript">
-
-    $(function() {
-        var videoModal = $('#video-modal').overlay({
-            expose: {
-                color: 'black',
-                loadSpeed: 200,
-                opacity: 0.85
-            },
-            closeOnClick: true,
-            api: true
-        });
-
-        $('.ignite-btn').click(function() {
-            videoModal.load();
-
-            var videoUrl = $(this).attr('href');
-            var flashvars = {};
-            var params = {
-                allowFullScreen: "true",
-                allowscriptaccess: "always"
-            };
-            var attributes = {};
-
-            swfobject.embedSWF(videoUrl, 'video-container', '425', '344', '9.0.0', '', flashvars, params, attributes);
-
-            return false;
-        });
-    });
-
-</script>
                 </div>
               </div>
             </div>
           </section>
         </header>
 
-  <!--
-<section class="video" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1><a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-play-circle-o"></i> Watch the Video</a></h1>
-          </div>
-        </div>
-      </div>
-    </section>
-  -->
 
         <section class="intro text-center section-padding" id="intro">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2 wp1">
                 <img src = "img/cartercoyote.png" class = "filter">
-                <p>COSAS is built on the fundamental of <FONT COLOR= "5DC8CD"><b>maximizing opportunities.</b></FONT> We serve as mentors and organizers. We provide invaluable information at the right time and place. We create networking opportunities and help forge connections between junior and senior co-op students. We give students the chance to listen and share their experience with the co-op program, work terms and life after graduation. We challenge our team to be innovative and maximize the value of each and every opportunity organized by COSAS.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+                <p>The idea of Null Studios was conceived in 2014, with a mission of providing students with real development experience, while allowing local non-profits and small-scale organizations to get assistance in launching a web presence for their company. Null Studios provides free consulting services along with affordable web development services (HTML, CSS, JavaScript) to select organizations on a rolling application basis. Selection is based on the organization's size, mission, revenue model, website complexity/features, and community impact, with an emphasis on providing services for non-profits and social enterprises.<br><br> <FONT COLOR = "000000" SIZE = "1">Student-run organizations automatically qualify for education pricing, and are given preference for website development.</FONT></p>
 
-        <section class="features text-center section-padding" id="features">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">With the help of COSAS, you can expect to...</h1>
-                <div class="features-wrapper">
-                  <div class="col-md-4 wp2">
-                    <div class="icon">
-                      
-                      <i class="fa fa-comments"></i>
-                      
-                    </div>
-                    <h2>Develop Public Speaking Skills</h2>
-                    <p>Add text here.</p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-05s">
-                    <div class="icon">
-                      <i class="fa fa-briefcase"></i>
-
-                    </div>
-                    <h2>Network with the best professionals</h2>
-                    <p>Add text here</p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-1s">
-                    <div class="icon">
-                      <i class="fa fa-book"></i>
-                    </div>
-                    <h2>Learn the professional fundamentals</h2>
-                    <p>Add text here</p>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -184,13 +101,18 @@ if($_POST["message"]) {
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
-                <h1>Our<span>signature <FONT COLOR= "5DC8CD"><b>co-op</b></FONT> events</span></h1>
-                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
+               <h1>Need a new Website? <i class = "fa fa-keyboard-o"></i></h1>
+            
+               <a href="database.html" class="ignite-btn">Request A Free Quote</a>
               </div>
             </div>
           </div>
         </section>
-        <section class="portfolio text-center section-padding" id="portfolio">
+
+
+
+
+        <section class="portfolio text-center section-padding" id="projects">
           <div class="container">
             <div class="row">
               <div id="portfolioSlider">
@@ -199,82 +121,82 @@ if($_POST["message"]) {
                     <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/portfolio-01.jpg" alt="Portfolio Item">
+                          <img src="img/portfolio-06.jpg" alt="Portfolio Item">
                           <div class="overlay">
-                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
+                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-file-word-o"></i><br>View Case Study</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
                       </div>
-                      <h2>Real Talk Series</h2>
-                      <p>Introducing the COSAS exclusive series: Real Talk. COSAS will be hosting a series of information sessions through January to February.</p>
+                      <h2>Co-op Student Association of Sauder</h2>
+                      <p>Coded in HTML, CSS, JavaScript. SEO and Google Analytics Integration.</p>
                     </div>
                     <div class="col-md-4 wp4 delay-05s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/portfolio-02.jpg" alt="Portfolio Item">
+                          <img src="img/portfolio-06.jpg" alt="Portfolio Item">
                           <div class="overlay">
-                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
+                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-file-word-o"></i><br>View Case Study</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
                       </div>
-                      <h2>Co-op Networking Night</h2>
-                      <p>Come to Sauder and network to your heart's content.</p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-03.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Professional Workshops</h2>
-                      <p>Whether you are looking for resume, cover letter or networking help, come out to our professional workshop for some great hands on experience and mentorship!</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-04.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Professional Mentorship Program</h2>
-                      <p>Learn from those who have been in your shoes.</p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/portfolio-05.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>Bowling Night</h2>
-                      <p>Nothing could get better.</p>
+                      <h2>Co-op Student Association of Sauder</h2>
+                      <p>Coded in HTML, CSS, JavaScript. SEO and Google Analytics Integration.</p>
                     </div>
                     <div class="col-md-4 wp4 delay-1s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
                           <img src="img/portfolio-06.jpg" alt="Portfolio Item">
                           <div class="overlay">
-                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa fa-facebook"></i><br>View Facebook Event</a>
+                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-file-word-o"></i><br>View Case Study</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
                       </div>
-                      <h2>Co-op Social</h2>
-                      <p>Network with your peers and create meaningful, lasting relationships.</p>
+                      <h2>Co-op Student Association of Sauder</h2>
+                      <p>Coded in HTML, CSS, JavaScript. SEO and Google Analytics Integration.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-md-4 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-06.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-file-word-o"></i><br>View Case Study</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Co-op Student Association of Sauder</h2>
+                      <p>Coded in HTML, CSS, JavaScript. SEO and Google Analytics Integration.</p>
+                    </div>
+                    <div class="col-md-4 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-05.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-file-word-o"></i><br>View Case Study</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Co-op Student Association of Sauder</h2>
+                      <p>Coded in HTML, CSS, JavaScript. SEO and Google Analytics Integration.</p>
+                    </div>
+                    <div class="col-md-4 wp4 delay-1s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-06.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa fa-file-word-o"></i><br>View Case Study</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2>Co-op Student Association of Sauder</h2>
+                      <p>Coded in HTML, CSS, JavaScript. SEO and Google Analytics Integration.</p>
                     </div>
                   </li>
                 </ul>
@@ -283,144 +205,13 @@ if($_POST["message"]) {
           </div>
         </section>
     
-        <section class="database text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1><span>Our <FONT COLOR= "5DC8CD"> <b>Professional</b></FONT> Resource Database</span></h1>
-                <p><FONT COLOR = "FFFFFF">Looking for resumes, cover letter, or interview prep?</FONT></p>
-                 <p><FONT COLOR = "FFFFFF">Utilize our tools to <b>maximize</b> your professional potential.</FONT></p>
-                <a href="database.html" class="ignite-btn">Go To Resources</a>
-                
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="team text-center section-padding" id="team">
-          <div class="container">
-         
-              <div class="col-md-12">
-                <h1 class="arrow">Our Team</h1>
-     
-            </div>
-            <div class="row">
-              <div class="team-wrapper">
-                <div id="teamSlider">
-                  <ul class="slides">
-
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/tyler.png" alt="Team Member">
-                        <h2>Tyler Young <br><br><FONT SIZE = 2 COLOR = "a1a9b0">President</FONT></h2></h2>
-                        <p>Tyler is a fourth year student studying accounting, with aspirations to obtain a CPA designation after graduation. Formerly a conflicted science student, Tyler has found his fit with the accounting career path.  A self-described comic book fanatic, he also enjoys working out, playing squash, and trying out new foods.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="https://ca.linkedin.com/in/tylerwyoung" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:tylerwyoung00@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/kevin.png" alt="Team Member">
-                        <h2>Kevin Yu<br><br><FONT SIZE = 2 COLOR = "a1a9b0">Vice-President</FONT></h2></h2>
-                        <p>Kevin is in his fourth year pursing a double option in General Business Management and Finance. His passion lies with personal development and mentorship. Outside of academics, Kevin loves to occasionally participate in a friendly game of poker. He is adventurous and unorthodox, always looking for a new experience in his life.</p>
-                  
-                        <div class="social">
-                          <ul class="social-buttons">
-                           <li><a href="https://ca.linkedin.com/in/kevinyu3" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:kevin.hak.yu@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/joseph.png" alt="Team Member">
-                        <h2>Joseph Lee <br><br><FONT SIZE = 2 COLOR = "a1a9b0">VP Technology</FONT></h2>
-                        <p>Joseph is a second year student in the BUCS program, pursuing a combined major in Business and Computer Science. He is an avid technology enthusiast, and he hopes to eventually launch a successful career in the technology industry. Aside from tech, Joseph is passionate about all facets of hockey and football.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="https://ca.linkedin.com/in/jhylee" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:jhylee@outlook.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/jenny.png" alt="Team Member">
-                        <h2>Jenny Tao <br><br><FONT SIZE = 2 COLOR = "a1a9b0">VP Events</FONT></h2></h2>
-                        <p>Jenny is in her final year studying Finance. Her coop work terms offered her different experiences in the financial industry from insurance to wealth management. She hopes to pursue a law degree, specializing for the financial sector, in the future. Jenny enjoys travelling, making dubsmash videos, and trying out new restaurants.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                           <li><a href="https://ca.linkedin.com/in/jhylee" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:jennyztao@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/cindy.png" alt="Team Member">
-                        <h2>Cindy Leung <br><br><FONT SIZE = 2 COLOR = "a1a9b0">VP Finance and Internal</FONT></h2></h2>
-                        <p>Cindy is in her final year studying Accounting and Business Technology Management. She is actively pursuing a career in IT Audit with hopes to bridge the gap between financials and technology. Outside of UBC, Cindy is passionate about giving back to the community through volunteering and managing her social initiative.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                           <li><a href="https://ca.linkedin.com/in/cindyyhl" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:cindyyhleung@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/ruby.png" alt="Team Member">
-                        <h2>Ruby Chen <br><br><FONT SIZE = 2 COLOR = "a1a9b0">VP Marketing</FONT></h2></h2>
-                        <p>Ruby is in her third year pursuing Marketing and BTM. She’s passionate about psychology, technology and great design. Honest and somewhat opinionated, Ruby enjoys a long debate with close friends, ideally with icecream or Starbucks. “It takes nothing to join the crowd. It takes everything to stand alone.”</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                           <li><a href="https://ca.linkedin.com/in/rubychen16" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:ruby.chen@alumni.ubc.ca" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/james.png" alt="Team Member">
-                        <h2>James Yue <br><br><FONT SIZE = 2 COLOR = "a1a9b0">VP Strategic Initiatives</FONT></h2></h2>
-                        <p>A dynamic and diligent fourth year Accounting student. Passionate about empowering youth to make sound financial decisions. Experienced in team settings, while constantly strengthening customer-service skills. A detail-oriented individual who thrives in undertaking challenging responsibilities and opportunities for personal growth.</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                           <li><a href="https://ca.linkedin.com/in/jamesyue" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:james.yue22@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/hazel.png" alt="Team Member">
-                        <h2>Hazel Wong <br><br><FONT SIZE = 2 COLOR = "a1a9b0">VP Strategic Initiatives</FONT></h2></h2>
-                        <p>Hazel is going into her fourth year pursuing a double in Accounting and Marketing in hopes to work for the non-profit sector. A phrase that she uses to describe herself is “to break and to make”. Her fondness for art means she likes to take things apart and to re-combine the pieces in different ways.<br><br>
-                        </p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                           <li><a href="https://ca.linkedin.com/in/hazelwong" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:hazelwong22@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
 
         <section class="subscribe text-center">
           <div class="container">
-            <h1><i class="fa fa-hand-o-down"></i><span>Contact Us</span></h1>
+            <h1>Application Form</h1>
 
             <form action="contact.php" id="form" method = "post" name = "form">
             <p>
@@ -444,31 +235,30 @@ if($_POST["message"]) {
 
 
         <section class="dark-bg text-center section-padding contact-wrap" id="contact">
-          <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <a href="#top"><i class="fa fa-chevron-up"></i></a>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1 class="arrow">Drop us a line</h1>
+                <h1 class="arrow">DROP US A LINE</h1>
               </div>
             </div>
             <div class="row contact-details">
               <div class="col-md-4">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                  <p>155-2053 Main Mall, UBC
-                    Sauder School</p>
+                  <p><FONT COLOR = "#ea1616"><b>221 6 Ave SE, Calgary, Alberta</b></FONT></p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="light-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Co-Op Office</span></h2>
-                  <p>604.822.9422</p>
+                  <h2><i class="fa fa-linkedin"></i><span>LinkedIn</span></h2>
+                  <p><a href = "https://www.linkedin.com/company/10014683?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1435292564914%2Ctas%3Anull%20studios"><FONT COLOR = "#ea1616"><b>Null Studios</b></FONT></a></p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="light-box box-hover">
-                  <h2><i class="fa fa-envelope-o"></i><span>Email</span></h2>
-                  <p>cosas.sauder@gmail.com</p>
+                  <h2><i class="fa fa-paper-plane-o"></i><span>Email</span></h2>
+                  <p><a href = "mailto:hello@nullstudios.me"><FONT COLOR = "#ea1616"><b>hello@nullstudios.me</b></FONT></a></p>
                 </div>
               </div>
             </div>
@@ -488,34 +278,25 @@ if($_POST["message"]) {
         </section>
 
 
-        <footer>
+     <footer>
           <div class="container">
             <div class="row">
               <div class="col-md-6">
                 <ul class="legals">
                   
-                  <p> &raquo; Null Studios | Developed by <a href = "http://jhylee.com"><b>Joseph Lee</b></a></p>
-                  <p> &raquo; Co-op Student Association of Sauder | All Rights Reserved ©</b> </a></FONT></p>
+                  <p> <FONT SIZE = "2" COLOR = "FFFFFF">&raquo; Null Studios | All Rights Reserved ©</FONT> </a></FONT></p>
                 
                 </ul>
               </div>
-               <div class="col-md-6 credit">
-                <a href = "http://www.cus.ca"><img src="img/cus.png"></a>      
-                <a href = "http://www.sauder.ubc.ca"><img src="img/sauder.png" Hspace = "20"></a>
-                <a href = "http://www.ubc.ca"><img src="img/ubc.png"></a>
+              <div class="col-md-6 credit">
+                
+                <p> <FONT SIZE = "2" COLOR = "FFFFFF">&raquo; Website Designed & Developed by <a href = "https://ca.linkedin.com/in/jhylee"><b>Joseph Lee</b></a></FONT></p>
+              
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-        
-             
         </footer>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
