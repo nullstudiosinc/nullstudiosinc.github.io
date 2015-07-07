@@ -175,7 +175,7 @@ Global Styles
 ========================================================================== */
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #242830; text-decoration: none; }
-p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
+p { color: #000; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #242830; display: block; width: 35px; margin: 25px auto; }
 .section-padding { padding: 90px 0 100px }
@@ -218,7 +218,7 @@ PAGE HEADER
 font-family: 'Raleway', sans-serif; font-weight: 600;}
 .header h1 { font-size: 80px; letter-spacing:1px; margin: 10px; }
 .header h1 span { color: #a1a9b0; display: inline-block; }
-.header p { letter-spacing: 1px; }
+.header p { letter-spacing: 1px;  color: #bebebe;}
 
 /* ==========================================================================
 AWESOME BUTTON
@@ -267,36 +267,57 @@ a.button {
 FREE QUOTE
 ========================================================================== */
 .swag { background: url('../img/sauder.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
-.swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; font-weight: 400; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 50px; height: 50px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #242830; opacity: 0.8; display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 18px; line-height: 46px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: rgba(42, 157, 229, 0.83); }
 
 
 .ignite-cta { background-color: #242830; padding: 70px 0; }
-.ignite-btn { display: inline-block; padding: 25px 40px; color: #fff; border: outset 8px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 5px;
+.ignite-btn { display: inline-block; padding: 15px 30px; color: #fff; border: outset 8px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 5px;
 
 
 }
 .ignite-btn:hover, .ignite-btn:focus { color: #ea1616; border: outset 8px #000000; }
 
 
-
-
 /* ==========================================================================
-WELCOME TO COSAS
+CASE STUDY1
+========================================================================== */
+.swag2 { background: url('../img/bookshelf.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag2 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag2 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+
+
+.ignite2-cta { background-color: #242830; padding: 70px 0; }
+.ignite2-btn { display: inline-block; padding: 15px 30px; color: #bebebe; border: outset 8px #dedede; text-transform: lowercase; font-weight: bold; letter-spacing: 5px;
+
+
+}
+.ignite2-btn:hover, .ignite-btn:focus { color: #fff; border: outset 8px #fff; }
+
+
+.swag3 { background: url('../img/Joseph-Lee.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag3 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag3 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+
+.swag4 { background: url('../img/carpentry.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag4 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag4 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+/* ==========================================================================
+ABOUT NULL STUDIOS
 ========================================================================== */
 .intro { background: #f7f7f7;
 }
 .filter {
   -webkit-filter: brightness(0) invert(0);
   filter: brightness(0) invert(0);
-    opacity: 0.5;
+    opacity: 0.35;
 }
-.intro p { margin: 0px 0 0; }
+.intro p { margin: 0px 0 0;  color: inherit; }
 
 /* ==========================================================================
-COSAS PERKS
+PORTFOLIO
 ========================================================================== */
 .features-wrapper, .team-wrapper { margin: 70px 0 0; }
 
