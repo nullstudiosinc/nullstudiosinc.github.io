@@ -618,12 +618,18 @@ PAGE HEADER
 }
 
 .header h1 {
-  font-size: 80px;
+  font-size: 90px;
   margin: 10px;
 }
 .header h1 span {
   color: #a1a9b0;
   display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 50px;
+  }
 }
 .header p {
   letter-spacing: 1px;
