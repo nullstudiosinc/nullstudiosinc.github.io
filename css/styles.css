@@ -601,6 +601,8 @@ nav ul li a:hover, nav ul li a:focus {
 PAGE HEADER
 ========================================================================== */
 
+
+
 .header {
   background: url('../img/background.jpg') no-repeat center center;
   opacity: 0.9;
@@ -614,11 +616,20 @@ PAGE HEADER
   font-weight: 600;
   position: relative;
 }
+
 .header h1 {
   font-size: 80px;
   letter-spacing: 1px;
   margin: 10px;
 }
+
+@media only screen and (max-width: 80px) {
+
+   .header h1 { font-size: 80em;
+     letter-spacing: 1px;
+     margin: 10px; }
+}
+
 .header h1 span {
   color: #a1a9b0;
   display: inline-block;
