@@ -621,13 +621,7 @@ PAGE HEADER
   font-size: 80px;
   letter-spacing: 1px;
   margin: 10px;
-}
-
-@media only screen and (max-width: 80px) {
-
-   .header h1 { font-size: 80em;
-     letter-spacing: 1px;
-     margin: 10px; }
+  max-width: 100%;
 }
 
 .header h1 span {
