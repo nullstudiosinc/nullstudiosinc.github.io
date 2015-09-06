@@ -83,6 +83,7 @@ h6 {
     font-weight: 600;
     color: #fff;
     background-color: #353535;
+    border-radius: 100px;
 }
 
 .btn-primary:hover,
@@ -135,6 +136,8 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 700;
     color: #fff;
     background-color: #353535;
+    border-radius: 100px;
+
 }
 
 .btn-xl:hover,
@@ -183,9 +186,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
-  padding-top: 0;
+  padding-top: 4px;
 
 }
 
@@ -216,7 +219,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -920,7 +923,7 @@ body {
 /*CONTACT*/
 
 .transparent {
-  background: url('../img/calgary.jpg') no-repeat center center;
+  background: url('../img/coding.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
