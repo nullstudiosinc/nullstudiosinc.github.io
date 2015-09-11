@@ -951,4 +951,32 @@ body {
   overflow: hidden;
 }
 
+/* ==========================================================================
+CONTACT US
+========================================================================== */
+
+.fa-angle-double-up {
+    font-size: 50px;
+}
+.fa-github-alt{
+font-size: 50px;}
+.fa-instagram{
+font-size: 50px;}
+.fa-envelope-o{
+font-size: 50px;}
+
+.up-arrow-btn {margin: 10px auto 20px; color: #353535; font-size: 20px; line-height: 20px; text-align: center; }
+
+.contact-details { margin: 70px 0; }
+.contact-details h2 { font-size: 20px; }
+.contact-details h2 span { display: block; color: #ea1616; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
+.contact-wrap { position: relative;
+ background-color: #fff; }
+
+ul.social-buttons { list-style: none; margin: 0; padding: 0; }
+ul.social-buttons li { display: inline-block; margin-right: 10px; }
+ul.social-buttons li:last-child { margin-right: 0; }
+.social-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #242830; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center; }
+.social-btn:hover, .social-btn:focus { background: #ffffff; color: #ea1616; }
+.social { margin-top: 25px }
 
