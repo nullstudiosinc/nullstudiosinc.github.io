@@ -290,6 +290,7 @@ header {
 
 }
 
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -980,3 +981,18 @@ ul.social-buttons li:last-child { margin-right: 0; }
 .social-btn:hover, .social-btn:focus { background: #ffffff; color: #ea1616; }
 .social { margin-top: 25px }
 
+
+
+.thanks {
+      text-align: center;
+      color: #fff;
+      background-attachment: scroll;
+      background-image: url(../img/thankyou.jpg);
+      background-position: center center;
+      background-repeat: none;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      font-family: 'Raleway', sans-serif;
+}
