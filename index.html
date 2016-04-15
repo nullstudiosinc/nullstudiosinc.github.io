@@ -1,470 +1,418 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Coastline Invoice</title>
-  <meta charset='utf-8'>
-  <meta name="description" content="Create your own invoice">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Null Studios Development</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/nullstudios.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body ng-app="invoicing" ng-controller="InvoiceCtrl">
-  <div class="container" width="800px" id="invoice">
-    <div class="row">
-      <div class="col-xs-12 heading">
-        <h4>Your Invoice to {{invoice.customer_info.web_link}}</h4>
+<body id="page-top" class="index">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-
+       page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <img src="img/null.png" class="filter">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#services">About Us</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Projects</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Request A Quote</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading">Null
+          <span>Studios</span>
+        </div>
+        <div class="intro-lead-in">A Web Development Initiative</div>
+        <a href="#services" class="page-scroll btn btn-xl">Learn More</a>
       </div>
     </div>
-    <div class="row branding">
-      <div class="col-xs-6">
-        <div class="invoice-number-container">
-          <label for="invoice-number">Invoice # </label>
-          <input type="text" id="invoice-number" ng-model="invoice.invoice_number" />
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">About Us</h2>
+          <p class="section-subheading">The idea of Null Studios was conceived in 2014, with a mission of providing new developers with real software engineering experience, while allowing local non-profits, social enterprises, small businesses, and budding entrepreneurs launch an
+            online presence for their company. Null Studios provides free consulting services along with affordable web development services to select organizations on a rolling application basis. Selection is based on the organization's size, mission,
+            revenue model, website complexity/features, and community impact, with an emphasis on providing services for non-profits and social enterprises.</h3>
+            <br>
+            <br>
+            <p class="small">* Student-run organizations and initiatives automatically qualify for education pricing.</p>
+          </p>
         </div>
       </div>
-      <div class="col-xs-6 logo-container">
-        <input type="file" id="imgInp" />
-        <img ng-hide="logoRemoved" id="company_logo" ng-src="{{ logo }}" alt="your image" width="300" />
-        <div>
-          <div class="noPrint" ng-hide="printMode">
-            <a ng-click="editLogo()" href>Edit Logo</a>
-            <a ng-click="toggleLogo()" id="remove_logo" href>{{ logoRemoved ? 'Show' : 'Hide' }} logo</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio" class="bg-light-gray transparent">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading">Check out some of our past work.</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item ">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-search-plus fa-3x"></i><h5>View Case Study</h5>
+              </div>
+            </div>
+            <img src="img/portfolio/homedeco.png" class="img-responsive rounded" alt="">
+          </a>
+          <div class="text-center">
+            <h4>Home Deco Construction</h4>
+            <p>Digital Consulting, HTML, CSS, jQuery Modals.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-search-plus fa-3x"></i><h5>View Case Study</h5>
+              </div>
+            </div>
+            <img src="img/portfolio/coopsauder.png" class="img-responsive rounded" alt="">
+          </a>
+          <div class="text-center">
+            <h4>Co-op Student Association of Sauder</h4>
+            <p>HTML, CSS, JavaScript, SEO, Google Analytics.</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-search-plus fa-3x"></i><h5>View Case Study</h5>
+              </div>
+
+            </div>
+            <img src="img/portfolio/personalweb.png" class="img-responsive rounded" alt="">
+          </a>
+          <div class="text-center">
+            <h4>Personal Website</h4>
+            <p>HTML, CSS, JavaScript, SEO, Google Analytics.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Contact Us</h2>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+
+          <form name="sentMessage" action="//formspree.io/hello@nullstudios.co" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name *" name="name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Email *" name="_replyto">
+                </div>
+                <div class="form-group">
+                  <input type="phone" class="form-control" placeholder="Your Number *"name="phone">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Tell us about your project! *" name="message"></textarea>
+                  <input type="hidden" name="_next" value="thanks.html" />
+                  <input type="hidden" name="_cc" value="hello@nullstudios.me" />
+                </div>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" value="Send" class="btn btn-xl">Send Message</button>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Null Studios Inc. | All Rights Reserved.</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li><a href="mailto:hello@nullstudios.me"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/company/10014683?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10014683%2Cidx%3A2-1-2%2CtarId%3A1441501269977%2Ctas%3Anull%20studios"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+
+            <li>
+              <p>Made with
+                <FONT COLOR="BF360C"><i class="fa fa-heart"></i></FONT> by <a href="http://nullstudios.me">Null Studios</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+  <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <div class="text-left">
+                <h2>Home Deco Construction</h2>
+                <br>
+
+                <img src="img/portfolio/code.png" class="rounded">
+                <img src="img/portfolio/homepage.png" class="rounded">
+
+                <h1>
+                  <FONT COLOR="ea1616">Problem</FONT>
+                </h1>
+                <p>Home Deco Construction was a successful small business in Vancouver, B.C that was lacking a web platform or digital strategy.</p>
+
+                <h1>
+                  <FONT COLOR="ea1616">Solution</FONT>
+                </h1>
+                <p>Null Studios derived a digital strategy that included advertising on local digital publications and integrating AdWords to reach more customers online. A responsive, modern website was also developed, showcasing past projects and clients.</p>
+
+
+                <h1>
+                  <FONT COLOR="ea1616">Result</FONT>
+                </h1>
+                <p>Lead generation from online customers spiked significantly, while referrals increased significantly, as customers could simply direct their friends and family to the website, instead of referring Home Deco through word of mouth.
+                  <br> [Metrics witheld for confidentiality]</p>
+                <p>
+                  <strong>Like what you see? Contact us today!</strong>
+                </p>
+                <ul class="list-inline">
+                  <p>Date: September 2015 | Client: Home Deco Construction</p>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row infos">
-      <div class="col-xs-6">
-        <div class="input-container">
-          <input type="text" ng-model="invoice.customer_info.name" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.customer_info.web_link" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.customer_info.address1" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.customer_info.address2" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.customer_info.postal" />
-        </div>
-        <div class="input-container" data-ng-hide='printMode'>
-          <select ng-model='currencySymbol' ng-options='currency.symbol as currency.name for currency in availableCurrencies'></select>
+  </div>
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
         </div>
       </div>
-      <div class="col-xs-6 right">
-        <div class="input-container">
-          <input type="text" ng-model="invoice.company_info.name" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.company_info.web_link" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.company_info.address1" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.company_info.address2" />
-        </div>
-        <div class="input-container">
-          <input type="text" ng-model="invoice.company_info.postal" />
-        </div>
-      </div>
-    </div>
-    <div class="items-table">
-      <div class="row header">
-        <div class="col-xs-2">&nbsp;</div>
-        <div class="col-xs-4">Description</div>
-        <div class="col-xs-2">Quantity</div>
-        <div class="col-xs-2">Cost {{currencySymbol}}</div>
-        <div class="col-xs-2 text-right">Total</div>
-      </div>
-      <div class="row invoice-item" ng-repeat="item in invoice.items" ng-animate="'slide-down'">
-        <div class="col-xs-2 remove-item-container">
-          <a href ng-hide="printMode" ng-click="removeItem(item)" class="btn-status-danger"><i class="fa fa-minus"></i></a>
-        </div>
-        <div class="col-xs-4 input-container">
-          <input ng-model="item.description" placeholder="Description" />
-        </div>
-        <div class="col-xs-2 input-container">
-          <input ng-model="item.qty" value="1" size="4" ng-required ng-validate="integer" placeholder="Quantity" />
-        </div>
-        <div class="col-xs-2 input-container">
-          <input ng-model="item.cost" value="0.00" ng-required ng-validate="number" size="6" placeholder="Cost" />
-        </div>
-        <div class="col-xs-2 text-right input-container">
-          {{item.cost * item.qty | currency: currencySymbol}}
-        </div>
-      </div>
-      <div class="row invoice-item">
-        <div class="col-xs-12 add-item-container" ng-hide="printMode">
-          <a class="btn-status-success" href ng-click="addItem()"><i class="fa fa-plus"></i></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-10 text-right">Sub Total</div>
-        <div class="col-xs-2 text-right">{{invoiceSubTotal() | currency: currencySymbol}}</div>
-      </div>
-      <div class="row">
-        <div class="col-xs-10 text-right">Tax(%):
-          <input ng-model="invoice.tax" ng-validate="number" style="width:43px">
-        </div>
-        <div class="col-xs-2 text-right">{{calculateTax() | currency: currencySymbol}}</div>
-      </div>
-      <div class="row">
-        <div class="col-xs-10 text-right">Grand Total:</div>
-        <div class="col-xs-2 text-right">{{calculateGrandTotal() | currency: currencySymbol}}</div>
-      </div>
-    </div>
-    <div class="row noPrint actions">
-      <a href="#" class="btn-status-success" ng-show="printMode" ng-click="printInfo()">Print</a>
-      <!--<a href="#" class="btn-status-default" ng-click="clearLocalStorage()">Reset</a>-->
-      <a href="#" class="btn-status-default" ng-hide="printMode" ng-click="printMode = true;">Turn On Print Mode</a>
-      <a href="#" class="btn-status-default" ng-show="printMode" ng-click="printMode = false;">Turn Off Print Mode</a>
-    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <div class="text-left">
+                <h2>UBC Co-op Student Association of Sauder</h2>
+                <br>
+                <h1>
+                  <FONT COLOR="ea1616">Problem</FONT>
+                </h1>
+                <p>The previous website was designed poorly, and was not very user friendly. It was poorly formatted, not SEO optimized, meaning it was always at the bottom of the list dervied by a search engine. Averaging only seven website viewers per
+                  month, the website was in dire need of a refresh.</p>
 
-    <!--<div ng-hide="printMode" class="copy noPrint">-->
+                <h1>
+                  <FONT COLOR="ea1616">Solution</FONT>
+                </h1>
+                <p>We reviewed COSAS's existing website and content, while providing significant feedback on the user experience, look & feel, and site functionality. Understanding that most university students want a simplistic, modern interface where they
+                  can quickly find what they're looking for, we designed a one page website, integrated with an easy to access resource database for the latest resumes, cover letters, and supporting documents.</p>
 
-    <div class="copy noPrint">
-      <p>Invoice generated by <b><a href="http://coastlinemarket.com">Coastline Market Inc.</a></b></p>
-      <p><img src="images/coastline-logo2.png"width="150" /></p>
+                <h1>
+                  <FONT COLOR="ea1616">Result</FONT>
+                </h1>
+                <p>The new website received tremendous support and feedback from COSAS's users, who praised the cohesive web experience and ease of use. The website had over 300 unique visitors during the first week of launch & through SEO Optimization,
+                  we were able to make the site easily searchable through search engines.</p>
+
+                <img src="img/portfolio/cosasold.png" class="rounded">
+                <img src="img/portfolio/cosasnew.png" class="rounded">
+                <img src="img/portfolio/cosasportfolio.png" class="rounded">
+
+                <strong>Like what you see? Contact us today!</strong>
+                </p>
+                <ul class="list-inline">
+                  <p>Date: July 2015 | Client: UBC Sauder Co-op Student Association</p>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <div class="text-left">
+                <h2>Independent Personal Website</h2>
+                <br>
+                <img src="img/portfolio/analytics.png" class="rounded">
+
+                <h1>
+                  <FONT COLOR="ea1616">Problem</FONT>
+                </h1>
+                <p>Joseph Lee wanted a portfolio-themed website to showcase his experience, skills, and expertise to potential employers and collaborators.</p>
+
+                <h1>
+                  <FONT COLOR="ea1616">Solution</FONT>
+                </h1>
+                <p>Primarily utilizing HTML and CSS, Null Studios developed a clean, responsive website, with a main landing page, a portfolio section, as well as a resume section.</p>
+
+                <h1>
+                  <FONT COLOR="ea1616">Result</FONT>
+                </h1>
+                <p>After only a week of launching the website, there were over 700 sessions, 90.61% new sessions, and 1000+ page views. This was all done without any social media marketing (purely SEO). </p>
+                <img src="img/portfolio/resume.png" class="rounded">
+
+                <strong>Like what you see? Contact us today!</strong>
+                </p>
+                <ul class="list-inline">
+                  <p>Date: August 2015 | Client: Personal</p>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/cbpAnimatedHeader.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <!--
+  <script src="js/contact_me.js"></script>
+-->
+  <!-- Custom Theme JavaScript -->
+  <script src="js/agency.js"></script>
+
 </body>
-<style>
-  .slide-down-enter,
-  .slide-down-leave {
-    -webkit-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    -moz-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    -ms-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    -o-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    display: block;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .items-table .row {
-    border-bottom: 1px solid #ddd;
-    line-height: 3em;
-  }
-
-  .items-table .row:last-child {
-    border-bottom: none;
-    line-height: 3em;
-  }
-
-  .slide-down-enter.slide-down-enter-active,
-  .slide-down-leave {
-    opacity: 1;
-    height: 46px;
-  }
-
-  .slide-down-leave.slide-down-leave-active,
-  .slide-down-enter {
-    opacity: 0;
-    height: 0px;
-  }
-
-  .invoice-number-container * {
-    font-weight: bold;
-  }
-
-  .items-table .row:nth-child(even) {
-    background: #f9f9f9;
-  }
-
-  .items-table input {
-    line-height: 1.5em;
-  }
-
-  .actions {
-    padding-top: 1em;
-  }
-
-  input:focus {
-    outline: 0;
-  }
-
-  .heading {
-    background-color: #357EBD;
-    color: #FFF;
-    margin-bottom: 1em;
-    text-align: center;
-    line-height: 2.5em;
-    padding: 15px;
-
-  }
-
-  .branding {
-    padding-bottom: 2em;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .logo-container {
-    text-align: right;
-  }
-
-  .infos .right {
-    text-align: right;
-  }
-
-  .infos .right input {
-    text-align: right;
-  }
-
-  .infos .input-container {
-    padding: 3px 0;
-  }
-
-  .header.row {
-    font-weight: bold;
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-  }
-
-  input,
-  textarea {
-    border: 1px solid #FFF;
-  }
-
-  .container input:hover,
-  .container textarea:hover,
-  .table-striped > tbody > tr:nth-child(2n+1) > td input:hover,
-  .container input:focus,
-  .container textarea:focus,
-  .table-striped > tbody > tr:nth-child(2n+1) > td input:focus {
-    border: 1px solid #CCC;
-  }
-
-  .table-striped > tbody > tr:nth-child(2n+1) > td input {
-    background-color: #F9F9F9;
-    border: 1px solid #F9F9F9;
-  }
-
-  @media print {
-    .noPrint {
-      display: none;
-    }
-  }
-
-  body {
-    padding: 20px;
-  }
-
-  .infos input {
-    width: 300px;
-  }
-
-  .align-right input {
-    text-align: right;
-    width: 300px;
-  }
-
-  div.container {
-    width: 800px;
-  }
-
-  #imgInp {
-    display: none;
-  }
-
-  .btn-status-default {
-    border-radius: 2px;
-    color: #E8E8E8;
-    border-style: none;
-    background-color: #01579B;
-    border-color: #01579B;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 2px 2px 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    outline: none;
-  }
-
-  .btn-status-default:hover,
-  .btn-status-default:focus,
-  .btn-status-default.focus,
-  .btn-status-default:active,
-  .btn-status-default.active,
-  .open > .dropdown-toggle.btn-status-default {
-    color: #E8E8E8;
-    background-color: #0D47A1;
-    border-color: #0D47A1;
-    outline: none;
-  }
-
-  .btn-status-default:active,
-  .btn-status-default.active,
-  .open > .dropdown-toggle.btn-status-default {
-    background-image: none;
-  }
-
-  .btn-status-default.disabled,
-  .btn-status-default[disabled],
-  fieldset[disabled] .btn-status-default,
-  .btn-status-default.disabled:hover,
-  .btn-status-default[disabled]:hover,
-  fieldset[disabled] .btn-status-default:hover,
-  .btn-status-default.disabled:focus,
-  .btn-status-default[disabled]:focus,
-  fieldset[disabled] .btn-status-default:focus,
-  .btn-status-default.disabled.focus,
-  .btn-status-default[disabled].focus,
-  fieldset[disabled] .btn-status-default.focus,
-  .btn-status-default.disabled:active,
-  .btn-status-default[disabled]:active,
-  fieldset[disabled] .btn-status-default:active,
-  .btn-status-default.disabled.active,
-  .btn-status-default[disabled].active,
-  fieldset[disabled] .btn-status-default.active {
-    color: #fff;
-    background-color: #01579B;
-    @include border-radius(2px);
-    opacity: 0.5;
-    outline: none;
-  }
-
-  .btn-status-danger {
-    border-radius: 2px;
-    color: #E8E8E8;
-    border-style: none;
-    background-color: #DD2C00;
-    border-color: #DD2C00;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 2px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    outline: none;
-  }
-
-  .btn-status-danger:hover,
-  .btn-status-danger:focus,
-  .btn-status-danger.focus,
-  .btn-status-danger:active,
-  .btn-status-danger.active,
-  .open > .dropdown-toggle.btn-status-danger {
-    @include border-radius(2px);
-    color: #E8E8E8;
-    background-color: #B71C1C;
-    border-color: #B71C1C;
-    outline: none;
-  }
-
-  .btn-status-danger.disabled,
-  .btn-status-danger[disabled],
-  fieldset[disabled] .btn-status-danger,
-  .btn-status-danger.disabled:hover,
-  .btn-status-danger[disabled]:hover,
-  fieldset[disabled] .btn-status-danger:hover,
-  .btn-status-danger.disabled:focus,
-  .btn-status-danger[disabled]:focus,
-  fieldset[disabled] .btn-status-danger:focus,
-  .btn-status-danger.disabled.focus,
-  .btn-status-danger[disabled].focus,
-  fieldset[disabled] .btn-status-danger.focus,
-  .btn-status-danger.disabled:active,
-  .btn-status-danger[disabled]:active,
-  fieldset[disabled] .btn-status-danger:active,
-  .btn-status-danger.disabled.active,
-  .btn-status-danger[disabled].active,
-  fieldset[disabled] .btn-status-danger.active {
-    border-radius: 2px;
-    color: #E8E8E8;
-    background-color: #DD2C00;
-    border-color: #DD2C00;
-    opacity: 0.3;
-    outline: none;
-  }
-
-  .btn-status-success {
-    border-radius: 2px;
-    color: #E8E8E8;
-    border-style: none;
-    background-color: #43A047;
-    border-color: #43A047;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 2px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    outline: none;
-  }
-
-  .btn-status-success:hover,
-  .btn-status-success:focus,
-  .btn-status-success.focus,
-  .btn-status-success:active,
-  .btn-status-success.active,
-  .open > .dropdown-toggle.btn-status-success {
-    border-radius: 2px;
-    color: #E8E8E8;
-    background-color: #1B5E20;
-    border-color: #1B5E20;
-    outline: none;
-  }
-
-  .btn-status-success.disabled,
-  .btn-status-success[disabled],
-  fieldset[disabled] .btn-status-success,
-  .btn-status-success.disabled:hover,
-  .btn-status-success[disabled]:hover,
-  fieldset[disabled] .btn-status-success:hover,
-  .btn-status-success.disabled:focus,
-  .btn-status-success[disabled]:focus,
-  fieldset[disabled] .btn-status-success:focus,
-  .btn-status-success.disabled.focus,
-  .btn-status-success[disabled].focus,
-  fieldset[disabled] .btn-status-success.focus,
-  .btn-status-success.disabled:active,
-  .btn-status-success[disabled]:active,
-  fieldset[disabled] .btn-status-success:active,
-  .btn-status-success.disabled.active,
-  .btn-status-success[disabled].active,
-  fieldset[disabled] .btn-status-success.active {
-    border-radius: 2px;
-    color: #fff;
-    background-color: #43A047;
-    opacity: 0.6;
-    outline: none;
-  }
-
-  a.btn-status-default:hover,
-  a.btn-status-default:active,
-  a.btn-status-default:focus,
-  a.btn-status-danger:hover,
-  a.btn-status-danger:active,
-  a.btn-status-danger:focus,
-  a.btn-status-success:hover,
-  a.btn-status-success:active,
-  a.btn-status-success:focus {
-    text-decoration: none;
-  }
-
-  .copy {
-    font-family: "Roboto", sans-serif;
-    width: 100%;
-    margin: 40px 0 20px 0;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    color: #404040;
-    cursor: default;
-    line-height: 1.4em;
-  }
-
-  .copy .love {
-    display: inline-block;
-    position: relative;
-    color: #ce0c15;
-  }
-</style>
 
 </html>

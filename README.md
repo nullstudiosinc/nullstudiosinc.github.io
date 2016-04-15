@@ -1,1 +1,1 @@
-MIT License
+# homedeco.github.io
